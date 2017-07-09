@@ -14,7 +14,7 @@ protocol Authenticatable {
 
 enum Authentication: String {
     case none
-    case http
+    case basic
     case accessToken
     case oauth2
 }
@@ -28,11 +28,11 @@ extension APITargetType {
     }
 
     var baseURL: URL {
-        return URL(string: "")!
+        return URL(string: "http://dev-env.5pdgpj4ucq.ap-southeast-1.elasticbeanstalk.com/api/v1")!
     }
 
     var authentication: Authentication {
-        return .none
+        return .oauth2
     }
 
     var parameters: Parameters? {

@@ -1,0 +1,34 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+use_frameworks!
+
+def shared_pods
+    # Network
+    pod 'Alamofire'
+    pod 'Moya'
+    pod 'ObjectMapper'
+    pod 'Moya-ObjectMapper/RxSwift'
+    pod 'Kingfisher'
+
+    # Reactive
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'RxDataSources'
+    pod 'Action'
+    pod 'RxSwiftExt'
+    pod 'RxOptional'
+
+    # Others
+    pod 'SwiftDate'
+    pod 'KeychainAccess'
+    pod 'SwiftGen'
+
+    # Debug
+    pod 'SwiftyBeaver'
+
+end
+
+target 'Moya Example' do
+    shared_pods
+end
