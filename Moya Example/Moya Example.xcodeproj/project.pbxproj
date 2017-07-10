@@ -41,7 +41,7 @@
 		57BF8D361F1289950028C67F /* UITableViewAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF8D0A1F1289950028C67F /* UITableViewAdditions.swift */; };
 		57BF8D381F1289950028C67F /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF8D0C1F1289950028C67F /* UIScrollView+Extensions.swift */; };
 		57BF8D421F1296F10028C67F /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF8D411F1296F10028C67F /* Storyboards.swift */; };
-		57BF8D621F1298F50028C67F /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57BF8D5A1F1298F50028C67F /* EventCell.xib */; };
+		57BF8D621F1298F50028C67F /* EventFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57BF8D5A1F1298F50028C67F /* EventFeedCell.xib */; };
 		57BF8D631F1298F50028C67F /* EventFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF8D5B1F1298F50028C67F /* EventFeedCell.swift */; };
 		57BF8D641F1298F50028C67F /* EventFeedSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF8D5C1F1298F50028C67F /* EventFeedSectionModel.swift */; };
 		57BF8D691F1298F50028C67F /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF8D611F1298F50028C67F /* EventListViewController.swift */; };
@@ -89,7 +89,7 @@
 		57BF8D0A1F1289950028C67F /* UITableViewAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewAdditions.swift; sourceTree = "<group>"; };
 		57BF8D0C1F1289950028C67F /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
 		57BF8D411F1296F10028C67F /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
-		57BF8D5A1F1298F50028C67F /* EventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
+		57BF8D5A1F1298F50028C67F /* EventFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventFeedCell.xib; sourceTree = "<group>"; };
 		57BF8D5B1F1298F50028C67F /* EventFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFeedCell.swift; sourceTree = "<group>"; };
 		57BF8D5C1F1298F50028C67F /* EventFeedSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFeedSectionModel.swift; sourceTree = "<group>"; };
 		57BF8D611F1298F50028C67F /* EventListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
@@ -265,7 +265,7 @@
 		57BF8D591F1298F50028C67F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				57BF8D5A1F1298F50028C67F /* EventCell.xib */,
+				57BF8D5A1F1298F50028C67F /* EventFeedCell.xib */,
 				57BF8D5B1F1298F50028C67F /* EventFeedCell.swift */,
 				57BF8D5C1F1298F50028C67F /* EventFeedSectionModel.swift */,
 			);
@@ -353,7 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57BF8D621F1298F50028C67F /* EventCell.xib in Resources */,
+				57BF8D621F1298F50028C67F /* EventFeedCell.xib in Resources */,
 				57BF8CD81F12873D0028C67F /* LaunchScreen.storyboard in Resources */,
 				57BF8CD51F12873D0028C67F /* Assets.xcassets in Resources */,
 				57BF8CD31F12873D0028C67F /* Main.storyboard in Resources */,

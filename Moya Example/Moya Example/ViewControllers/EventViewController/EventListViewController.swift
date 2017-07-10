@@ -59,7 +59,7 @@ fileprivate extension EventListViewController {
     
     func configureTableView() {
         tableView.rowHeight = 240
-
+        tableView.registerCell(type: EventFeedCell.self)
         dataSource.configureCell = { dataSource, tableView, indexPath, model in
             let cell = tableView.dequeueReusableCell(type: EventFeedCell.self, for: indexPath)
             cell.setCellModel(model)

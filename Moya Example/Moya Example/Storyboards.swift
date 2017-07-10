@@ -64,6 +64,15 @@ enum StoryboardScene {
       return vc
     }
 
+    case homeNavigationControllerScene = "HomeNavigationController"
+    static func instantiateHomeNavigationController() -> UINavigationController {
+      guard let vc = StoryboardScene.Main.homeNavigationControllerScene.viewController() as? UINavigationController
+      else {
+        fatalError("ViewController 'HomeNavigationController' is not of the expected class UINavigationController.")
+      }
+      return vc
+    }
+
     case homeViewControllerScene = "HomeViewController"
     static func instantiateHomeViewController() -> Moya_Example.HomeViewController {
       guard let vc = StoryboardScene.Main.homeViewControllerScene.viewController() as? Moya_Example.HomeViewController

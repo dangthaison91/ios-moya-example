@@ -38,6 +38,9 @@
                                     <constraint firstAttribute="width" constant="120" id="ot5-3X-cQf"/>
                                 </constraints>
                                 <state key="normal" title="Show Events"/>
+                                <connections>
+                                    <segue destination="Jgl-xg-gd8" kind="show" id="Thy-qk-lhg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -66,8 +69,23 @@
                     <view key="view" contentMode="scaleToFill" id="J1j-NE-IIR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qWB-tB-wya">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qWB-tB-wya" firstAttribute="leading" secondItem="J1j-NE-IIR" secondAttribute="leadingMargin" id="WrQ-V8-kZ5"/>
+                            <constraint firstItem="1PN-J5-5tI" firstAttribute="top" secondItem="qWB-tB-wya" secondAttribute="bottom" id="liH-Os-rcs"/>
+                            <constraint firstItem="qWB-tB-wya" firstAttribute="top" secondItem="nDq-vu-UPm" secondAttribute="bottom" id="nP6-qr-cik"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qWB-tB-wya" secondAttribute="trailing" id="p0P-tE-SCE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="qWB-tB-wya" id="oJB-MX-04e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sre-44-ijx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -185,7 +203,7 @@
         <!--Navigation Controller-->
         <scene sceneID="8Ec-Qi-Snd">
             <objects>
-                <navigationController id="wdX-0W-3Qy" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeNavigationController" id="wdX-0W-3Qy" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nM9-aE-Dd4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

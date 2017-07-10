@@ -29,27 +29,12 @@ class HomeViewController: UIViewController {
             .merge([needSignout, tokenInvalid])
             .subscribe(onNext: { [weak self] _ in self?.navigateToLoginScreen() })
             .disposed(by: disposeBag)
-
-        // Show Events Screen
-        showEventButton
-            .rx.tap
-            .subscribe(onNext: { [weak self] _ in
-                self?.navigateToEventScreen()
-            })
-            .disposed(by: disposeBag)
     }
 
     private func navigateToLoginScreen() {
         let loginVC = StoryboardScene.Main.instantiateSignInNavigationController()
         if let window = UIApplication.shared.delegate?.window {
             window?.rootViewController = loginVC
-        }
-    }
-
-    private func navigateToEventScreen() {
-        let homeViewController = StoryboardScene.Main.instantiateHomeViewController()
-        if let window = UIApplication.shared.delegate?.window {
-            window?.rootViewController = homeViewController
         }
     }
 }

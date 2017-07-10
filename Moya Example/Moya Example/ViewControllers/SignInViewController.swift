@@ -75,7 +75,7 @@ class SignInViewController: UIViewController {
     }
 
     private func navigateToHomeScreen() {
-        let homeViewController = StoryboardScene.Main.instantiateHomeViewController()
+        let homeViewController = StoryboardScene.Main.instantiateHomeNavigationController()
         if let window = UIApplication.shared.delegate?.window {
             window?.rootViewController = homeViewController
         }

@@ -29,13 +29,9 @@ class EventFeedCell: UITableViewCell, NibLoadableView, ReusableView {
     @IBOutlet weak var bannerImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var favoriteButton: UIButton!
-    @IBOutlet weak var categoryLabel: UILabel!
     
     func setCellModel(_ cellModel: EventFeedCellModel) {
         nameLabel.text = cellModel.name
-        locationLabel.text = cellModel.location
         timeLabel.text = cellModel.startTime.string(custom: "dd MMM HH:mm")
     }
 }
